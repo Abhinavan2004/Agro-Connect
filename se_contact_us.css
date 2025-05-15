@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(106,174,255);
+}
+
+.header {
+    margin-top:20px;
+    background-color: rgb(34,58,122);
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px; /* Adjusted margin to reduce space between heading and subheading */
+}
+
+.header h1 {
+    margin: 5px 0; /* Adjusted margin to reduce space */
+}
+
+.header h2 {
+    margin: 0; /* Reset margin to 0 */
+}
+
+.container {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    background-color: white;
+    display: flex; /* Use flexbox to position items */
+}
+
+.person {
+    flex: 1; /* Take up available space */
+}
+
+.person img {
+    width: 100%;
+    display: block;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.form {
+    flex: 1; /* Take up available space */
+    padding-left: 20px; /* Add some space between image and form */
+}
+
+.form h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(89,107,155);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(89,107,155);
+}
