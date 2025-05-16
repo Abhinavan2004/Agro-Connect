@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+
+.head {
+    background-color: green;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-bottom: 30px; 
+}
+
+.head h1 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.head h5{
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.box {
+    margin-top: 80px; 
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border-radius: 30px;
+    height: 80%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+.boxes {
+    margin: 10px;
+    border-radius: 30px;
+    height: 40%;
+    width: 28.33%;
+    background-color: aqua;
+    flex: 1; 
+}
+
+.boxes1 a {
+    text-decoration: none;
+}
+
+.boxes1 {
+    margin: 10px;
+    border-radius: 30px;
+    height: 46.66%;
+    width: 28.33%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+    color: black; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.boxes1 span {
+    padding-top: 58px;
+    font-size: 38px;
+    display: block; 
+    text-align: center; 
+    font-weight: bold;
+}
+
+.boxes2, .boxes4, .boxes6 {
+    margin: 10px;
+    border-radius: 30px;
+    height: 46.66%;
+    width: 28.33%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.boxes3 {
+    margin: 10px;
+    border-radius: 30px;
+    height: 46.66%;
+    width: 28.33%;
+    border: 4px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.boxes3 a {
+    text-decoration: none;
+}
+
+.boxes3 span {
+    padding-top: 58px;
+    font-size: 34px;
+    display: block; 
+    text-align: center; 
+    font-weight: bold;
+}
+
+.boxes5 {
+    margin: 10px;
+    border-radius: 30px;
+    height: 46.66%;
+    width: 28.33%;
+    
+    color: black; 
+    border: 4px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.23rem;
+    backdrop-filter: blur(5px);
+}
+
+.boxes5 a {
+    text-decoration: none;
+}
+
+.boxes5 span {
+    padding-top: 58px;
+    font-size: 36px;
+    display: block; 
+    text-align: center; 
+    font-weight: bold;
+}
