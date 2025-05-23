@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Market</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background-color: #008CBA;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        .hero {
+            background-image: url('./IMAGES/pexels-quang-nguyen-vinh-2132250.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 1490px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blanchedalmond; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+            text-align: center;
+            margin: auto;
+            font-weight: bold;
+            
+        }
+        
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        .btn {
+            background-color: #008CBA;
+            color: #fff;
+            border: none;
+            padding: 15px 30px; /* Increased padding */
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        // .btn:hover {
+            background-color: #005f7f;
+        }
+
+        
+        section {
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+      
+        }
+        
+        .product {
+            background-color: #fff;
+            border-radius: 5px;
+          //  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            float: left;
+            margin: 0 20px 20px 0;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 0 10px 5px rgba(14, 14, 14, 0.7); 
+
+        }
+        
+        .product img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            
+        }
+        
+        .product .info {
+            padding: 20px;
+        }
+        
+        .product h3 {
+            margin-bottom: 10px;
+        }
+        
+        .product p {
+            margin-bottom: 20px;
+        }
+
+        .product button {
+    background-color:  rgb(34,58,122);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 2px solid black;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agri - Cart</h1>
+        <h5>A Platform by  Agro - Connect team</h5>
+    </header>
+
+    <nav>
+        <a href="./Se_website.html">Home</a>
+        <a href="#" onclick="scrollToSection('products')">Products</a>
+        <a href="./Se_About.html">About</a>
+        <a href="./se_contact_us.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Farmer's Market</h2>
+            <p>Shop fresh, organic produce, essential farming instruments, and crop products sourced from local farmers. Experience sustainable agriculture firsthand.</p>
+            <a href="#" class="btn" onclick="scrollToSection('products')">Shop Now</a>
+        </div>
+    </div>
+    
+    <section id="products">
+        <div class="container">
+            <h2>Instruments</h2>
+            <div class="product">
+                <img src="shears.png" alt="Product 4">
+                <div class="info">
+                    <h3>Shears</h3>
+                    <p>Essential for precise pruning and trimming tasks in gardening.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="rake.jpg" alt="Product 5">
+                <div class="info">
+                    <h3>Rake</h3>
+                    <p>Essential for efficient soil cultivation and debris removal.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="italian-grape-hoe.jpg" alt="Product 6">
+                <div class="info">
+                    <h3>Grape-Hoe</h3>
+                    <p>Essential for precision soil cultivation in vineyards.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Fresh Produce</h2>
+            <div class="product">
+                <img src="pexels-pixabay-248420.jpg" alt="Product 1">
+                <div class="info">
+                    <h3>Tomatoes</h3>
+                    <p>Fresh, organic tomatoes harvested from local farms.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pexels-marco-antonio-victorino-2286776.jpg" alt="Product 2">
+                <div class="info">
+                    <h3>Potatoes</h3>
+                    <p>High-quality potatoes, perfect for cooking or planting.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pexels-pierpaolo-riondato-296615.jpg" alt="Product 3">
+                <div class="info">
+                    <h3>Apples</h3>
+                    <p>Crisp and juicy apples freshly picked from the orchard.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Small Instruments</h2>
+            <div class="product">
+                <img src="axe-old-lumberjack-blade.jpg" alt="Product 4">
+                <div class="info">
+                    <h3>Axe</h3>
+                    <p>Essential for efficient wood chopping and forestry tasks.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="sprayer.jpg" alt="Product 5">
+                <div class="info">
+                    <h3>Chemical Sprayer Bag</h3>
+                    <p>Chemical Sprayer: Essential for precise pesticide and fertilizer application.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="sickle.jpg" alt="Product 6">
+                <div class="info">
+                    <h3>Sickle</h3>
+                    <p>Sickle: Essential for efficient cutting of crops and grasses.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container">
+            <h2>Chemical & Pesticides</h2>
+            <div class="product">
+                <img src="alphamethrin-10-ec-insecticides.png" alt="Product 4">
+                <div class="info">
+                    <h3>Alphametrin</h3>
+                    <p>Alphamethrin Chemical: Essential for effective insecticide and pest control.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="alphametrin.webp" alt="Product 5">
+                <div class="info">
+                    <h3>Tejas</h3>
+                    <p>Tejas 10 Chemical: Essential for effective crop protection and pest management.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="USMC-07664.jpg" alt="Product 6">
+                <div class="info">
+                    <h3>3x1 Chemical Pack</h3>
+                    <p>Chemical Pack: Essential for comprehensive crop protection and pest management solutions.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2024 Farmers Market. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            // .scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
